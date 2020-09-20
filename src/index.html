@@ -10,11 +10,11 @@
 <body>
   <div id="app"></div>
   <nav>
-    <h1>liz barnes</h1>
+    <h1 id="navToHome" style="cursor: pointer;">liz barnes</h1>
     <ul id="navLinks">
-      <li><a id="navToBio" class="navLink">Bio</a></li>
-      <li><a id="navToTechnologies" class="navLink">Technologies</a></li>
-      <li><a id="navToProjects" class="navLink">Projects</a></li>
+      <li><a id="navToBio" class="navLink" style="cursor: pointer;">bio</a></li>
+      <li><a id="navToTechnologies" class="navLink" style="cursor: pointer;">technologies</a></li>
+      <li><a id="navToProjects" class="navLink" style="cursor: pointer;">projects</a></li>
     </ul>
   </nav>
   <!-- End Navigation -->
@@ -26,12 +26,14 @@
   </div>
   <div class="fullPage" id="technologiesPage" class="technologiesPage">
     <h2 class="technology">tools</h2>
-    <ul class="tools">
-      <li>GitHub</li>
-      <li>Figma</li>
-      <li>Illustrator</li>
-      
-    </ul>
+    <div id="techContainer">
+      <ul class="tools">
+        <li>GitHub</li>
+        <li>Figma</li>
+        <li>Bootstrap</li>
+        <li>Flexbox</li>
+      </ul>
+    </div>
   </div>
   <div class="fullPage" id="projectsPage" class="projectsPage">
     <h2 class="my-work">my work</h2>

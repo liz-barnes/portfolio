@@ -1,0 +1,17 @@
+.btn {
+    width: 125px;
+    color: #203544;
+    border: 1px solid #203544;
+  }
+  
+  .btn:hover {
+    background-color: #9ABBA9;
+    border: 1px solid #233d4d;
+    color: #203544;
+  }
+
+  #buttonContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }

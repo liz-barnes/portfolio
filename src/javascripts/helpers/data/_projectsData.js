@@ -5,20 +5,22 @@ const projects = [
     screenshot: 'src/images/bearwatcher.png',
     description:
       'This application allows users to track a bear that they see out in the wild by uploading a picture!', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML | CSS | Vanilla JavaScript | Bootstrap | Github',
+    technologiesUsed: 'HTML | CSS | JavaScript | Bootstrap | Github',
     available: true,
     url: 'https://lizb-bear-watcher.netlify.app/',
+    githubProject: 'https://github.com/liz-barnes/bear-watcher',
     githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
   },
   {
     id: 1,
-    title: 'cool project',
-    screenshot: 'http://g.recordit.co/5pCbie7vYZ.gif',
-    description: 'This is the best project',
+    title: 'Pet Adoption',
+    screenshot: 'src/images/petadoption.png',
+    description: 'This application allows users to filter through and view the pets that are available for adoption.',
     technologiesUsed:
       'HTML | CSS | Vanilla JavaScript | Version Control with Github',
     available: true,
-    url: 'https://github.com/nss-evening-cohort-8/js-part-deux',
+    url: 'https://preciouspetsadoptionagency.netlify.app/#',
+    githubProject: 'https://github.com/liz-barnes/pet-adoption',
   },
   // {
   //   id: 2,
@@ -64,28 +66,6 @@ const projects = [
   //   url: 'https://github.com/nss-evening-cohort-8/js-part-deux',
   //   githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
   // },
-  {
-    id: 0,
-    title: 'Bear Watcher',
-    screenshot: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-    description:
-      'This application allows users to track a bear that they see out in the wild by uploading a picture!', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML | CSS | Vanilla JavaScript | Bootstrap | Github',
-    available: true,
-    url: 'https://lizb-bear-watcher.netlify.app/',
-    githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  },
-  {
-    id: 1,
-    title: 'Bear Watcher',
-    screenshot: 'https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-1100x628.jpg',
-    description:
-      'This application allows users to track a bear that they see out in the wild by uploading a picture!', // A good project description includes 'the what', 'the why', and 'the how'.
-    technologiesUsed: 'HTML | CSS | Vanilla JavaScript | Bootstrap | Github',
-    available: true,
-    url: 'https://lizb-bear-watcher.netlify.app/',
-    githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  },
 ];
 
 const getProjects = () => projects;
