@@ -16,6 +16,12 @@ const showProjects = () => {
   $('#projectsPage').show();
 };
 
+const showHome = () => {
+  $('#technologiesPage').show();
+  $('#bioPage').show();
+  $('#projectsPage').show();
+};
+
 const navbarEvents = () => {
   // $('#navToBio').on('click', (e) => {
   //     console.log(e);
@@ -29,6 +35,8 @@ const navbarEvents = () => {
       showTechnologies();
     } else if (target === 'navToProjects') {
       showProjects();
+    } else if (target === 'navToHome') {
+      showHome();
     }
   });
   // $('body').on('click', showBio());

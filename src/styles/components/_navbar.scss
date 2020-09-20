@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 45px 15px 35px;
+    background-color: $primary1;
+  }
+  
+  #navLinks {
+    list-style: none;
+    text-transform: lowercase;
+    display: flex;
+    color: $primary2;
+    margin-top: 10px;
+  }
+  
+  #navToHome:hover {
+    color: $accent;
+  }
+
+  .navLink {
+    display: block;
+    border: none;
+    align-content: center;
+    color: $primary2;
+  }
+
+  .navLink:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  ul li a {
+    margin-left: 75px;
+  }
+
