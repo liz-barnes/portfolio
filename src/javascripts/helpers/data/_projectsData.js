@@ -1,7 +1,7 @@
 const projects = [
   {
     id: 0,
-    title: 'Bear Watcher',
+    title: 'bear watcher',
     screenshot: 'src/images/bearwatcher.png',
     description:
       'This application allows users to track a bear that they see out in the wild by uploading a picture!', // A good project description includes 'the what', 'the why', and 'the how'.
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 1,
-    title: 'Pet Adoption',
+    title: 'pet adoption',
     screenshot: 'src/images/petadoption.png',
     description: 'This application allows users to filter through and view the pets that are available for adoption.',
     technologiesUsed:
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Sorting Hat',
+    title: 'sorting hat',
     screenshot: '',
     description: 'Have you ever always wondered which Hogwarts house you belong to? Users can type their name and sort themselves into a house!',
     technologiesUsed:
@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Color Flipper',
+    title: 'color flipper',
     screenshot: '',
     description: 'Users can change the background color and see the color code on the click of a button.',
     technologiesUsed:
@@ -46,7 +46,7 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Tamagotchi',
+    title: 'tamagotchi',
     screenshot: '',
     description: 'Recreated Tamagotchi! User can interact with their pet! Pet can eat, sleep, fight and play.',
     technologiesUsed:
