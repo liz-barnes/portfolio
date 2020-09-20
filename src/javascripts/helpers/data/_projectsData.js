@@ -22,50 +22,39 @@ const projects = [
     url: 'https://preciouspetsadoptionagency.netlify.app/#',
     githubProject: 'https://github.com/liz-barnes/pet-adoption',
   },
-  // {
-  //   id: 2,
-  //   title: 'cool project',
-  //   screenshot: '/images/liz-pose.png',
-  //   description: 'This is the best project',
-  //   technologiesUsed:
-  //     'HTML | CSS | Vanilla JavaScript | Version Control with Github',
-  //   available: false,
-  //   url: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  //   githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  // },
-  // {
-  //   id: 3,
-  //   title: 'cool project',
-  //   screenshot: '/images/kreamer-graphic.png',
-  //   description: 'This is the best project',
-  //   technologiesUsed:
-  //     'HTML | CSS | Vanilla JavaScript | Version Control with Github',
-  //   available: false,
-  //   url: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  //   githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  // },
-  // {
-  //   id: 4,
-  //   title: 'cool project',
-  //   screenshot: '/images/ns-coaching-opp.png',
-  //   description: 'This is the best project',
-  //   technologiesUsed:
-  //     'HTML | CSS | Vanilla JavaScript | Version Control with Github',
-  //   available: false,
-  //   url: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  //   githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  // },
-  // {
-  //   id: 5,
-  //   title: 'cool project',
-  //   screenshot: '/images/allyssa-flowers.png',
-  //   description: 'This is the best project',
-  //   technologiesUsed:
-  //     'HTML | CSS | Vanilla JavaScript | Version Control with Github',
-  //   available: false,
-  //   url: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  //   githubUrl: 'https://github.com/nss-evening-cohort-8/js-part-deux',
-  // },
+  {
+    id: 2,
+    title: 'Sorting Hat',
+    screenshot: '',
+    description: 'Have you ever always wondered which Hogwarts house you belong to? Users can type their name and sort themselves into a house!',
+    technologiesUsed:
+      'HTML | CSS | JavaScript | Bootstrap',
+    available: false,
+    url: 'hhttps://hoggywarts-sorting-hat.netlify.app/',
+    githubProject: 'https://github.com/liz-barnes/sorting-hat',
+  },
+  {
+    id: 3,
+    title: 'Color Flipper',
+    screenshot: '',
+    description: 'Users can change the background color and see the color code on the click of a button.',
+    technologiesUsed:
+      'HTML | CSS | JavaScript | Version Control with Github',
+    available: false,
+    url: '',
+    githubProject: 'https://github.com/liz-barnes/color-flipper',
+  },
+  {
+    id: 4,
+    title: 'Tamagotchi',
+    screenshot: '',
+    description: 'Recreated Tamagotchi! User can interact with their pet! Pet can eat, sleep, fight and play.',
+    technologiesUsed:
+      'HTML | CSS | JavaScript | JQuery | SASS',
+    available: false,
+    url: '',
+    githubProject: 'https://github.com/liz-barnes/Tamagotchi',
+  },
 ];
 
 const getProjects = () => projects;
