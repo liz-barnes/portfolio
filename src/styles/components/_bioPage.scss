@@ -1,0 +1,32 @@
+#bioPage {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 25px 75px 75px 125px;
+}
+
+.bio-picture {
+  min-width: 400px;
+  width: 30%;
+  height: 425px;
+  background-color: #9ABBA9;
+  box-shadow: #203544 20px 20px;
+  border-radius: 150px 0px 0px 0px;
+}
+
+.bio-intro {
+  width: 50%;
+  align-self: center;
+  margin-left: 75px;
+}
+
+.bio {
+  width: 95%;
+}
+
+#profile-picture img {
+  margin: auto;
+  margin: 30px;
+  height: 100%;
+  width: 85%;
+  border-radius: 150px 0px 0px 0px;
+}
