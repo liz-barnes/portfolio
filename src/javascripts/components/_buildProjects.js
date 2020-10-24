@@ -4,9 +4,14 @@ const buildProjects = () => {
   projectData.getProjects().forEach((project) => {
     if (project.available === true) {
       $('#projectsContainer').append(`
-          <div id="project-${project.id}" class="project-card" style="background-image: url(${project.screenshot})">
-            <div class="hover-content"></div>
+      <div id="project-${project.id}" class="project-card" style="background-image: url(${project.screenshot})">
+          <div class="hover-content">
+            <p>${project.type}</p>
+            <h6>${project.title}</h6>
+            <button>view project</button>
+            <button>visit site</button>
           </div>
+      </div>
       `);
     }
   });

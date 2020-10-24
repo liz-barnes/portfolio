@@ -2,6 +2,7 @@ const projects = [
   {
     id: 0,
     title: 'bear watcher',
+    type: 'website',
     screenshot: 'src/images/bearwatcher.png',
     description:
       'This application allows users to track a bear that they see out in the wild by uploading a picture!', // A good project description includes 'the what', 'the why', and 'the how'.
@@ -14,6 +15,7 @@ const projects = [
   {
     id: 1,
     title: 'pet adoption',
+    type: 'website',
     screenshot: 'src/images/petadoption.png',
     description: 'This application allows users to filter through and view the pets that are available for adoption.',
     technologiesUsed:
@@ -58,6 +60,7 @@ const projects = [
   {
     id: 5,
     title: 'zenterest',
+    type: 'website',
     screenshot: 'src/images/zenterest.png',
     description: 'User can create boards and add pins to those boards.',
     technologiesUsed:

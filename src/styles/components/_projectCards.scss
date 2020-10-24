@@ -9,38 +9,71 @@
   justify-content: space-evenly;
 }
 
-.projectCard {
-  border: 2px solid black;
-  padding: 5px 10px;
-  // margin: 25px;
-  margin: 5px;
-  text-align: center;
-  width: 375px;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-}
+// .projectCard {
+//   border: 2px solid black;
+//   padding: 5px 10px;
+//   // margin: 25px;
+//   margin: 5px;
+//   text-align: center;
+//   width: 375px;
+//   height: auto;
+//   background-size: cover;
+//   background-position: center;
+// }
 
-.projectImage {
-  width: 225px;
-  height: 200px;
-  margin: auto;
-  margin-bottom: 15px;
-  background-size: cover;
-  background-position: center;
-  // border: 1px solid #46433e;
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // position: relative;
-}
+// .projectImage {
+//   width: 225px;
+//   height: 200px;
+//   margin: auto;
+//   margin-bottom: 15px;
+//   background-size: cover;
+//   background-position: center;
+//   // border: 1px solid #46433e;
+//   // background-size: cover;
+//   // background-position: center;
+//   // background-repeat: no-repeat;
+//   // position: relative;
+// }
 
 .project-card {
-  width: 400px;
-  height: 330px;
+  width: 375px;
+  height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border: 1px solid white;
- margin-bottom: 50px;
+  margin-bottom: 50px;
 }
+
+// .project-card:before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(to bottom, rgbe(0,176,155,0.5), rgbe(150,201,61,1));
+//   z-index: 2;
+//   transition: 0.5s all;
+//   opacity: 1;
+// }
+
+// .project-card:hover {
+//   content: "";
+//   background-color: #2035447e;
+//   z-index: 1;
+// }
+
+// .project-card:hover {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(30, 15, 39, 0.452);
+//   z-index: 1;
+// }
