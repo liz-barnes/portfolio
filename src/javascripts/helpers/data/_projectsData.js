@@ -55,6 +55,17 @@ const projects = [
     url: '',
     githubProject: 'https://github.com/liz-barnes/Tamagotchi',
   },
+  {
+    id: 5,
+    title: 'zenterest',
+    screenshot: 'src/images/zenterest.png',
+    description: 'User can create boards and add pins to those boards.',
+    technologiesUsed:
+      'HTML | CSS | JavaScript | JQuery | SASS | Firebase',
+    available: true,
+    url: 'https://pinterest-5a315.web.app/#',
+    githubProject: 'https://github.com/liz-barnes/zenterest.git',
+  },
 ];
 
 const getProjects = () => projects;
