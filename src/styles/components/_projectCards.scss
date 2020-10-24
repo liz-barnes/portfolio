@@ -9,6 +9,105 @@
   justify-content: space-evenly;
 }
 
+.project-card-container {
+  display: flex;
+  width: 85%;
+  justify-content: space-around;
+  // justify-content: center;
+  // background-size: cover;
+  // background-position: center;
+  width: 375px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  margin-bottom: 50px;
+}
+
+.project-card { 
+  width: 100%;
+  height: 100%;
+  // width: 360px;
+  // height: 280px;
+  // padding: 2rem 1rem;
+  // background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  // box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  // transition: 0.5s ease-in-out;
+}
+
+.project-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgbe(0,176,155,0.5), rgbe(150,201,61,1));
+  z-index: 2;
+  // transition: 0.5s all;
+  opacity: 0;
+}
+
+.project-card:hover:before {
+  background: #203544d7;
+  opacity: 1;
+}
+
+.project-card .hover-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  // transform: translateY(30px);
+  // transition: 05s all;
+}
+
+.project-card:hover .hover-content {
+  margin: auto;
+  opacity: 1;
+  // transform: translateY(0px);
+}
+
+// .project-btn-container {
+//   margin: 5px;
+// }
+.project-type {
+  font-family: $secondaryFont;
+  font-size: 18px;
+  font-style: italic;
+
+}
+
+.project-title {
+  font-family: $primaryFont;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.project-btn {
+  background-color: #203544d7;
+  border: 0.5px solid white;
+  color: white;
+  padding: 7px 10px;
+  margin: 5px;
+}
+
+.project-btn:hover {
+  background-color: #ffffff83;
+}
+
+// #projectsContainer {
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: space-evenly;
+// }
+
 // .projectCard {
 //   border: 2px solid black;
 //   padding: 5px 10px;
@@ -35,15 +134,19 @@
 //   // position: relative;
 // }
 
-.project-card {
-  width: 375px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border: 1px solid white;
-  margin-bottom: 50px;
-}
+// .project-card {
+//   width: 375px;
+//   height: 300px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   border: 1px solid white;
+//   margin-bottom: 50px;
+// }
+
+// .project-card:hover {
+
+// }
 
 // .project-card:before {
 //   content: "";
