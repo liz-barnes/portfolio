@@ -61,6 +61,7 @@ const projects = [
     id: 5,
     title: 'zenterest',
     type: 'website',
+    typeOfProject: 'Personal project',
     screenshot: 'src/images/zenterest.png',
     description: 'User can create boards and add pins to those boards.',
     technologiesUsed:
