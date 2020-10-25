@@ -1,4 +1,5 @@
 import projectData from '../helpers/data/_projectsData';
+import projectView from './_projectView';
 
 const buildProjects = () => {
   projectData.getProjects().forEach((project) => {
@@ -20,7 +21,9 @@ const buildProjects = () => {
     }
     $('body').on('click', '.view-project-btn', (e) => {
       e.stopImmediatePropagation();
-      console.warn(e.currentTarget.id);
+      const projectId = e.currentTarget.id;
+      projectView.projectView(projectId);
+      console.warn(projectId);
     });
   });
 };
