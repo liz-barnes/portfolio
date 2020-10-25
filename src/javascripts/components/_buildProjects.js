@@ -10,16 +10,22 @@ const buildProjects = () => {
             <p class="project-type">${project.type}</p>
             <h6 class="project-title">${project.title}</h6>
             <div class="project-btn-container">
-              <button class="project-btn" id="view-project-btn">view project</button>
-              <button class="project-btn" id="visit-site-btn">visit site</button>
+              <button class="view-project-btn project-btn" id="${project.id}">view project</button>
+              <a href="${project.url}" target="_blank" class="project-btn visit-site-btn" id="${project.id}">visit site</a>
             </div>
             </div>
         </div>
       </div>
       `);
     }
+    $('body').on('click', '.view-project-btn', (e) => {
+      e.stopImmediatePropagation();
+      console.warn(e.currentTarget.id);
+    });
   });
 };
+
+// {/* <button class="project-btn" id="visit-site-btn">visit site</button> */}
 
 // const buildProjects = () => {
 //   projectData.getProjects().forEach((project) => {
