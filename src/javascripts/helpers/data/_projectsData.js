@@ -62,7 +62,7 @@ const projects = [
     title: 'zenterest',
     type: 'website',
     typeOfProject: 'Personal project',
-    screenshot: 'src/images/zenterest.png',
+    screenshot: 'src/images/zenterest-screenshot.png',
     description: 'User can create boards and add pins to those boards.',
     technologiesUsed:
       'HTML | CSS | JavaScript | JQuery | SASS | Firebase',
