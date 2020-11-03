@@ -1,3 +1,9 @@
+import axios from 'axios';
+import apiKeys from '../apiKeys.json';
+
+const baseUrl = apiKeys.firebaseKeys.databaseURL;
+console.warn('url', baseUrl);
+
 const projects = [
   {
     id: 0,
@@ -75,3 +81,20 @@ const projects = [
 const getProjects = () => projects;
 
 export default { getProjects };
+
+// const retrieveProjects = () => new Promise((resolve, reject) => {
+//     axios
+//     .get(`${baseUrl}/projects.json`). then((response) => {
+//       console.warn('response', response);
+//       resolve(console.warn)
+//   });
+// });
+
+const retrieveProjects = () => {
+  axios
+    .get(`${baseUrl}/projects.json`).then((response) => {
+      console.warn('response', response);
+    });
+};
+
+retrieveProjects();
