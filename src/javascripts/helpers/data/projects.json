@@ -71,5 +71,31 @@
     "url": "https://pinterest-5a315.web.app/#",
     "githubProject": "https://github.com/liz-barnes/zenterest.git",
     "githubUrl": ""
-  }
+  },
+  {
+    "available": "true",
+    "description": "Unauthorized user can only read data. Authorized user can create, update and delete data.",
+    "githubProject": "https://github.com/liz-barnes/michelin-star-restaurant-dashboard-michelin-star-restaurant-dashboard",
+    "githubUrl": "",
+    "id": "6",
+    "screenshot": "src/images/le-baguette-screenshot.png",
+    "technologiesUsed": "HTML | JavaScript | JQuery | SASS | Firebase",
+    "title": "le baguette",
+    "type": "website",
+    "typeOfProject": "Group project",
+    "url": "https://michelin-star-35c92.web.app/"
+},
+{
+  "available": "true",
+  "description": "On login, 'Events' tab appears in the navigation. User can create, read, update and delete events and their details.",
+  "githubProject": "https://github.com/liz-barnes/renaissance-fair-dashboard-renaissance-fair-dashboard",
+  "githubUrl": "",
+  "id": "7",
+  "screenshot": "src/images/freelancer-screenshot.png",
+  "technologiesUsed": "HTML | JavaScript | JQuery | SASS | Firebase",
+  "title": "freelancer",
+  "type": "website",
+  "typeOfProject": "Group project",
+  "url": "https://freelancer-f77ce.web.app/"
+}
 ]

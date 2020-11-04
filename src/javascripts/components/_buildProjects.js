@@ -2,23 +2,26 @@ import projectData from '../helpers/data/_projectsData';
 import projectView from './_projectView';
 
 const buildProjects = () => {
-  projectData.getProjects().forEach((project) => {
-    if (project.available === true) {
-      $('#projectsContainer').append(`
-      <div id="project-${project.id}" class="project-card-container" style="background-image: url(${project.screenshot})">
-        <div class="project-card">
-          <div class="hover-content">
-            <p class="project-type">${project.type}</p>
-            <h6 class="project-title">${project.title}</h6>
-            <div class="project-btn-container">
-              <button class="view-project-btn project-btn" id="${project.id}">view project</button>
-              <a href="${project.url}" target="_blank" class="project-btn visit-site-btn" id="${project.id}">visit site</a>
-            </div>
-            </div>
+  projectData.getProjects().then((response) => {
+    console.warn(response);
+    response.forEach((project) => {
+      if (project.available === true) {
+        $('#projectsContainer').append(`
+        <div id="project-${project.firebaseKey}" class="project-card-container" style="background-image: url(${project.screenshot})">
+          <div class="project-card">
+            <div class="hover-content">
+              <p class="project-type">${project.type}</p>
+              <h6 class="project-title">${project.title}</h6>
+              <div class="project-btn-container">
+                <button class="view-project-btn project-btn" id="${project.firebaseKey}">view project</button>
+                <a href="${project.url}" target="_blank" class="project-btn visit-site-btn" id="${project.firebaseKey}">visit site</a>
+              </div>
+              </div>
+          </div>
         </div>
-      </div>
-      `);
-    }
+        `);
+      }
+    });
     $('body').on('click', '.view-project-btn', (e) => {
       e.stopImmediatePropagation();
       const projectId = e.currentTarget.id;
