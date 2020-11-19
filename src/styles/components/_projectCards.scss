@@ -17,9 +17,8 @@
 
 .project-card-container {
   display: flex;
-  // width: 85%;
-  width: 85%;
-  height: 500px;
+  width: 556px;
+  height: 313px;
   justify-content: space-around;
   // justify-content: center;
   // background-size: cover;
@@ -65,7 +64,7 @@
 }
 
 .project-card:hover:before {
-  background: $accent-color;
+  background: $primary1;
   opacity: 1;
 }
 
@@ -105,6 +104,7 @@
   color: white;
   padding: 7px 10px;
   margin: 5px;
+  // background-color: $primary1;
 }
 
 .project-btn:hover {
