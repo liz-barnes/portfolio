@@ -18,4 +18,10 @@ const getProjects = () => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
-export default { getProjects };
+const getSingleProject = (projectId) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/projects/${projectId}.json`).then((response) => {
+    resolve(response.data);
+  }).catch((error) => reject(error));
+});
+
+export default { getProjects, getSingleProject };
