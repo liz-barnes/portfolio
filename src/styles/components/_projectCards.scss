@@ -1,36 +1,196 @@
 #projectsPage {
-    padding: 0px 75px;
-    // margin: 0px 55px 50px 55px;
-  }
-  
-  #projectsContainer{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-  }
-  
-  .projectCard {
-    border: 2px solid black;
-    padding: 5px 10px;
-    // margin: 25px;
-    margin: 5px;
-    text-align: center;
-    width: 375px;
-    height: auto;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .projectImage {
-    width: 225px;
-    height: 200px;
-    margin: auto;
-    margin-bottom: 15px;
-    background-size: cover;
-    background-position: center;
-    // border: 1px solid #46433e;
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // position: relative;
-  }
+  padding: 0px 75px;
+  // margin: 0px 55px 50px 55px;
+}
+
+#projectsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.project-img {
+  // width: 100%;
+  height: 100%;
+
+}
+
+.project-card-container {
+  display: flex;
+  width: 556px;
+  height: 313px;
+  justify-content: space-around;
+  // justify-content: center;
+  // background-size: cover;
+  // background-position: center;
+  // 556 x 313
+  // width: 375px;
+  // height: 215px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #203544;
+  margin-bottom: 50px;
+  margin: 25px;
+}
+
+.project-card { 
+  width: 100%;
+  height: 100%;
+  // width: 360px;
+  // height: 280px;
+  // padding: 2rem 1rem;
+  // background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  // box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+  transition: 0.5s ease-out;
+}
+
+.project-card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgbe(0,176,155,0.5), rgbe(150,201,61,1));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.project-card:hover:before {
+  background: $primary1;
+  opacity: 1;
+}
+
+.project-card .hover-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  // transition: 05s all;
+}
+
+.project-card:hover .hover-content {
+  margin: auto;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+// .project-btn-container {
+//   margin: 5px;
+// }
+.project-type {
+  font-family: $secondaryFont;
+  font-size: 18px;
+  font-style: italic;
+
+}
+
+.project-title {
+  font-family: $primaryFont;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.project-btn {
+  // background-color: #203544d7;
+  border: 0.5px solid white;
+  color: white;
+  padding: 7px 10px;
+  margin: 5px;
+  // background-color: $primary1;
+}
+
+.project-btn:hover {
+  background-color: #ffffff83;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+// #projectsContainer {
+//   display: flex;
+//   flex-flow: row wrap;
+//   justify-content: space-evenly;
+// }
+
+// .projectCard {
+//   border: 2px solid black;
+//   padding: 5px 10px;
+//   // margin: 25px;
+//   margin: 5px;
+//   text-align: center;
+//   width: 375px;
+//   height: auto;
+//   background-size: cover;
+//   background-position: center;
+// }
+
+// .projectImage {
+//   width: 225px;
+//   height: 200px;
+//   margin: auto;
+//   margin-bottom: 15px;
+//   background-size: cover;
+//   background-position: center;
+//   // border: 1px solid #46433e;
+//   // background-size: cover;
+//   // background-position: center;
+//   // background-repeat: no-repeat;
+//   // position: relative;
+// }
+
+// .project-card {
+//   width: 375px;
+//   height: 300px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   border: 1px solid white;
+//   margin-bottom: 50px;
+// }
+
+// .project-card:hover {
+
+// }
+
+// .project-card:before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(to bottom, rgbe(0,176,155,0.5), rgbe(150,201,61,1));
+//   z-index: 2;
+//   transition: 0.5s all;
+//   opacity: 1;
+// }
+
+// .project-card:hover {
+//   content: "";
+//   background-color: #2035447e;
+//   z-index: 1;
+// }
+
+// .project-card:hover {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(30, 15, 39, 0.452);
+//   z-index: 1;
+// }

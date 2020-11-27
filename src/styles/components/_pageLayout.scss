@@ -1,7 +1,9 @@
-h1, h2, h3 {
-    font-family: $primaryFont;
-    letter-spacing: 0.045em;
-    text-align: center;
+h1,
+h2,
+h3 {
+  font-family: $primaryFont;
+  letter-spacing: 0.045em;
+  text-align: center;
 }
 
 h1 {
@@ -15,8 +17,8 @@ h2 {
 }
 
 h3 {
-    font-size: 32px;
-  }
+  font-size: 32px;
+}
 
 .title {
   margin-bottom: 10px;
