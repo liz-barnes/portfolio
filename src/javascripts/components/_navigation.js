@@ -28,7 +28,6 @@ const navbarEvents = () => {
   // });
   $('body').on('click', (e) => {
     const target = e.target.id;
-    console.warn(target);
     if (target === 'navToBio') {
       showBio();
     } else if (target === 'navToTechnologies') {

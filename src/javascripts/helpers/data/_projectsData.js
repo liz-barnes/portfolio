@@ -12,7 +12,6 @@ const getProjects = () => new Promise((resolve, reject) => {
           projects.push(allProjects[projectId]);
         });
       }
-      console.warn(projects);
       resolve(projects);
     }).catch((error) => reject(error));
 });
