@@ -1,7 +1,6 @@
 import axios from 'axios';
-import apiKeys from '../apiKeys.json';
 
-const baseUrl = apiKeys.firebaseKeys.databaseURL;
+const baseUrl = 'https://portfolio-d1098.firebaseio.com';
 
 const getProjects = () => new Promise((resolve, reject) => {
   axios
