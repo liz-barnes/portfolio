@@ -3,7 +3,7 @@
     "id": "0",
     "title": "bear watcher",
     "type": "website",
-    "screenshot": "src/images/bearwatcher.png",
+    "screenshot": "https://i.ibb.co/Q9bRfd6/bearwatcher.png",
     "description": "This application allows users to track a bear that they see out in the wild by uploading a picture!', // A good project description includes 'the what', 'the why', and 'the how'.",
     "technologiesUsed": "HTML | CSS | JavaScript | Bootstrap | Github",
     "available": "false",
