@@ -1,7 +1,6 @@
 import axios from 'axios';
-import apiKeys from '../apiKeys.json';
 
-const baseUrl = apiKeys.firebaseKeys.databaseURL;
+const baseUrl = 'https://portfolio-d1098.firebaseio.com';
 
 const getProjects = () => new Promise((resolve, reject) => {
   axios
@@ -13,9 +12,14 @@ const getProjects = () => new Promise((resolve, reject) => {
           projects.push(allProjects[projectId]);
         });
       }
-      console.warn(projects);
       resolve(projects);
     }).catch((error) => reject(error));
 });
 
-export default { getProjects };
+const getSingleProject = (projectId) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/projects/${projectId}.json`).then((response) => {
+    resolve(response.data);
+  }).catch((error) => reject(error));
+});
+
+export default { getProjects, getSingleProject };
